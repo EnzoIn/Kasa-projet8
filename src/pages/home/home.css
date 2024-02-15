@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(/public/fonts/Montserrat-Bold.ttf);
+  src: url(/public/fonts/Montserrat-Medium.ttf);
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Montserrat;
+  gap: 50px;
+}
