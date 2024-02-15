@@ -1,0 +1,11 @@
+.gallery {
+  background: #F6F6F6;
+  padding: 26px;
+  border-radius: 25px;
+}
+
+.gallery ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}

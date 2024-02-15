@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 340px;
+  height: 340px;
+  margin: 28px;
+  background: rgb(255, 97, 97);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 97, 97, 1) 75%,
+    rgba(203, 77, 77, 1) 100%
+  );
+  border-radius: 10px;
+  list-style: none;
+}
+
+.card img {
+  width: 295px;
+  height: 235px;
+  margin-left: 22.5px;
+  object-fit: cover;
+  border-radius: 10px 10px 5px 5px;
+}
+
+.card .infos {
+  width: 300px;
+  height: 37px;
+  margin-left: 22.5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}

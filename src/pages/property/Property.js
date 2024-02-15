@@ -1,9 +1,14 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header';
+import "../reset.css";
+import './property.css';
 
 const Property = () => {
   return (
-    <div>
-      <h1>Property</h1>
+    <div className="property">
+      <Header />
+      <Footer />
     </div>
   );
 };

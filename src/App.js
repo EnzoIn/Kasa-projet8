@@ -9,8 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/:page" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/:page" element={<About />} />
         <Route path="/property" element={<Property />} />
         <Route path="/*" element={<PageError />} />
       </Routes>
