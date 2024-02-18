@@ -1,12 +1,6 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(/public/fonts/Montserrat-Bold.ttf);
-  src: url(/public/fonts/Montserrat-Medium.ttf);
-}
-
 .about{
   display: flex;
+  gap: 50px;
   align-items: center;
-  flex-direction: column;
-  font-family: Montserrat;
+  flex-direction: column;font-family: monserrat-medium;
 }

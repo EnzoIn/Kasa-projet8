@@ -1,9 +1,3 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(/public/fonts/Montserrat-Bold.ttf);
-  src: url(/public/fonts/Montserrat-Medium.ttf);
-}
-
 .property {
-  font-family: Monserrat;
+  font-family: monserrat-medium;
 }

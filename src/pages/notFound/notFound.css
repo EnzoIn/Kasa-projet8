@@ -1,0 +1,25 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: monserrat-medium;
+  gap: 50px;
+}
+
+.not-found h2 {
+  font-family: Monserrat-extrabold;
+  font-size: 288px;
+  color: #ff6060;
+  margin: 80px 0 80px 0;
+}
+
+.not-found .text {
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.not-found a {
+  margin: 85px 0 90px 0;
+  color: black;
+  font-size: 18px;
+}
