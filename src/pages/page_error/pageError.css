@@ -1,9 +1,0 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(/public/fonts/Montserrat-Bold.ttf);
-  src: url(/public/fonts/Montserrat-Medium.ttf);
-}
-
-.page-error {
-  font-family: Monserrat;
-}
