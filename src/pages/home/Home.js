@@ -1,19 +1,34 @@
-import React from "react";
-import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
-import Gallery from "../../components/gallery/Gallery";
-import Header from "../../components/header/Header";
-import "../reset.css";
+import React, { useEffect, useState } from "react";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card";
 import "./home.css";
 
 const Home = () => {
+  const [datas, setDatas] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("./api/logements.json");
+      const data = await response.json();
+      setDatas(data);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div className="home">
-      <Header />
-      <Banner page="home" />
-      <Gallery />
-      <Footer />
-    </div>
+    <main className="home">
+      <Banner
+        page="home"
+        title="Chez vous, partout et ailleurs"
+        image="./assets/paysage1.png"
+        alt="Point de vue de falaise proche de la mer."
+      />
+      <div className="gallery">
+        {datas.map((property) => (
+          <Card key={property.id} property={property} />
+        ))}
+      </div>
+    </main>
   );
 };
 

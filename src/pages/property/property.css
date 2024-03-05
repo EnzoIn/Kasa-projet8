@@ -1,3 +1,163 @@
 .property {
-  font-family: monserrat-medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  max-width: 1280px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.property-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.property-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property-description h1 {
+  font-family: monserrat-regular;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.property-description h2 {
+  font-size: 18px;
+  margin: 10px 0 14px 0;
+}
+
+.property-host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.property-host figure {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.property-host img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.property-host figcaption {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  margin-left: 20px;
+  text-align: right;
+  line-height: 22px;
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.property-host .rating {
+  display: flex;
+}
+
+.property-tag {
+  display: flex;
+  gap: 10px;
+}
+
+.property-collapse {
+  display: flex;
+  width: 100%;
+  gap: 76px;
+}
+
+.property-collapse .collapse {
+  max-width: 927px;
+}
+.property-collapse .collapse-container {
+  height: 32px;
+}
+
+.collapse-infos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#ff6060 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: bullet 2s steps(4) infinite;
+  margin: 200px 0;
+}
+@keyframes bullet {to{clip-path: inset(0 -34% 0 0)}}
+
+@media (max-width: 768px) {
+  .property {
+    gap: 20px;
+  }
+
+  .property-description h1 {
+    font-size: 18px;
+    max-width: 320px;
+  }
+
+  .property-container {
+    flex-direction: column;
+  }
+
+  .rating {
+    width: 300px;
+    align-items: flex-end;
+  }
+
+  .property-host {
+    flex-direction: row-reverse;
+    margin-top: 10px;
+  }
+
+  .property-host figure {
+    width: 300px;
+  }
+
+  .property-host figcaption {
+    justify-content: flex-end;
+    font-size: 12px;
+  }
+
+  .property-host img {
+    width: 32px;
+  }
+
+  .property-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .property-collapse .collapse-container {
+    height: 10px;
+    padding: 10px 10px 10px 15px;
+  }
+
+  .property-collapse .collapse-container h2 {
+    font-size: 13px;
+  }
+
+  .property-collapse .collapse-container svg {
+    width: 16px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .property-tag {
+    gap: 2px;
+  }
 }

@@ -1,0 +1,51 @@
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-count {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  color: white;
+}
+
+.carousel-img {
+  width: 100%;
+  object-fit: cover;
+  height: 455px;
+  border-radius: 25px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 205px;
+  left: 20px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 205px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+.carousel-img {
+  height: 255px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 125px;
+  width: 24px;
+  height: 24px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 125px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+}
+}

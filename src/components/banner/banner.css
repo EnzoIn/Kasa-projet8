@@ -8,12 +8,12 @@
 }
 
 .container-banner p {
+  position: absolute;
+  top: 90px;
+  left: 210px;
   color: white;
-  top: 85px;
-  left: 260px;
   font-size: 48px;
   font-family: monserrat-bold;
-  position: absolute;
 }
 
 .banner-img {
@@ -22,4 +22,25 @@
   border-radius: 25px;
   object-fit: cover;
   opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .container-banner p {
+    width: 460px;
+    top: 60px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-banner p {
+    width: 230px;
+    font-size: 24px;
+    top: 33px;
+    left: 15px;
+  }
+
+  .container-banner {
+    height: 111px;
+  }
 }
