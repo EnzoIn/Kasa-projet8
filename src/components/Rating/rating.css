@@ -1,0 +1,25 @@
+.rating {
+  gap: 15px;
+}
+
+.star {
+  fill: #E3E3E3;
+}
+
+.starActive {
+  fill: #FF6060;
+}
+
+@media (max-width: 768px) {
+  .rating {
+    gap: 6px;
+  }
+
+  .star {
+    width: 13px;
+  }
+
+  .starActive {
+    width: 13px;
+  }
+  }

@@ -1,22 +1,20 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./banner.css";
 
-const Banner = ({ page }) => {
-  if (page === "about") {
-    return (
-      <div className="container-banner">
-        <img className="banner-img" src="./assets/paysage2.png" alt="Imgae de paysage" />
-      </div>
-    );
-  }else if (page === "home" || "/") {
-    return (
-      <div className="container-banner">
-        <img className="banner-img" src="./assets/paysage1.png" alt="Imgae de paysage" />
-        <p>Chez vous, partout et ailleurs</p>
-      </div>
-    );
-    
-  }
+const Banner = ({ title, image, alt }) => {
+  return (
+    <div className="container-banner">
+      <img className="banner-img" src={image} alt={alt} />
+      <p>{title}</p>
+    </div>
+  );
+};
+
+Banner.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default Banner;

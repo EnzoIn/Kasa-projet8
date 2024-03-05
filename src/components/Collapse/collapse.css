@@ -1,12 +1,7 @@
-.container {
+.collapse {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   width: 100%;
-  max-width: 1023px;
-}
-
-.collapse {
   overflow: hidden;
 }
 
@@ -21,6 +16,11 @@
   padding: 10px 20px 10px 15px;
   background: #ff6060;
   color: white;
+}
+
+.collapse button {
+  background: transparent;
+  border: none;
 }
 
 .collapse-title {
@@ -49,11 +49,13 @@
   }
 }
 
-.fade-animation {
+.collapse .fade-animation {
+  display: block;
   animation: fade 0.5s ease-in-out forwards;
 }
 
 .collapse-infos {
+  display: none;
   z-index: 1;
   border-radius: 5px;
   background: rgb(246, 246, 246);

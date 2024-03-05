@@ -1,19 +1,15 @@
-
-.about{
+#root {
   display: flex;
-  gap: 50px;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  font-family: monserrat-medium;
+  gap: 50px;
   box-sizing: border-box;
-  padding: 0 20px;
+  
 }
 
-.about .collapse {
-  max-width: 1023px;
-}
 @media (max-width: 768px) {
-  .about {
+  #root {
     gap: 25px;
   }
 }
