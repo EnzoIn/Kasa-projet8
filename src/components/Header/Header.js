@@ -35,12 +35,12 @@ const Header = () => {
       </svg>
       <div className="nav-bar">
         <ul>
-          <NavLink to="/home">
-            <li>Accueil</li>
-          </NavLink>
-          <NavLink to="/about">
-            <li>A Propos</li>
-          </NavLink>
+          <li>
+            <NavLink to="/home">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">Propos</NavLink>
+          </li>
         </ul>
       </div>
     </header>
