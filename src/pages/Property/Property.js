@@ -32,7 +32,7 @@ const Property = () => {
 
   return (
     <main className="property">
-      <Carousel property={property} />
+      <Carousel pictures={property.pictures} title={property.title} />
       <div className="property-container">
         <section className="property-description">
           <h1>{property.title}</h1>

@@ -25,7 +25,12 @@ const Home = () => {
       />
       <div className="gallery">
         {datas.map((property) => (
-          <Card key={property.id} property={property} />
+          <Card
+            key={property.id}
+            id={property.id}
+            cover={property.cover}
+            title={property.title}
+          />
         ))}
       </div>
     </main>

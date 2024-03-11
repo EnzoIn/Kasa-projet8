@@ -2,27 +2,27 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import "./carousel.css";
 
-const Carousel = ({ property }) => {
+const Carousel = ({ title, pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const next = () =>
     setCurrentIndex((index) =>
-      index === property.pictures.length - 1 ? 0 : index + 1
+      index === pictures.length - 1 ? 0 : index + 1
     );
   const previous = () =>
     setCurrentIndex((index) =>
-      index === 0 ? property.pictures.length - 1 : index - 1
+      index === 0 ? pictures.length - 1 : index - 1
     );
 
-  const currentPicture = property.pictures[currentIndex];
-  const imgCounter = property.pictures.length;
+  const currentPicture = pictures[currentIndex];
+  const imgCounter = pictures.length;
 
   if (imgCounter === 1) {
     return (
       <figure className="carousel">
         <img
           src={currentPicture}
-          alt={property.title}
+          alt={title}
           className="carousel-img"
         />
       </figure>
@@ -61,17 +61,15 @@ const Carousel = ({ property }) => {
           fill="white"
         />
       </svg>
-      <img src={currentPicture} alt={property.title} className="carousel-img" />
+      <img src={currentPicture} alt={title} className="carousel-img" />
       <figcaption className="carousel-count">{counter}</figcaption>
     </figure>
   );
 };
 
 Carousel.propTypes = {
-  property: PropTypes.shape({
     pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
     title: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default Carousel;

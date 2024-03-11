@@ -3,27 +3,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./card.css";
 
-const Card = ({ property }) => {
+const Card = ({ id, cover, title }) => {
   return (
     <article>
       <Link
         className="card"
-        to={`/property/${property.id}`}
-        state={{ property: property }}
+        to={`/property/${id}`}
       >
-        <img src={property.cover} alt={property.title} />
-        <h2 className="infos">{property.title}</h2>
+        <img src={cover} alt={title} />
+        <h2 className="infos">{title}</h2>
       </Link>
     </article>
   );
 };
 
 Card.propTypes = {
-  property: PropTypes.shape({
     id: PropTypes.string.isRequired,
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default Card;
