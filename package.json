@@ -2,7 +2,6 @@
   "name": "kasa-projet8",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://enzoin.github.io/kasa-projet8/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
